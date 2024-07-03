@@ -1,0 +1,8 @@
+resources/
+vendor/
+
+# IDE/editor specific files
+.vscode/
+.idea/
+.goland/
+
