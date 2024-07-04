@@ -15,9 +15,9 @@ jobs:
       postgres:
         image: postgres:16-alpine
         env:
-          POSTGRES_PASSWORD: admin
-          POSTGRES_USER: root
           POSTGRES_DB: simple_bank
+          POSTGRES_USER: root
+          POSTGRES_PASSWORD: admin
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
@@ -25,8 +25,6 @@ jobs:
           --health-retries 5
         ports:
           - 7432:5432
-
-
 
     steps:
     - uses: actions/checkout@v4
